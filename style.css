@@ -239,10 +239,255 @@ p.satyn_al {
     width: 400px;
 }
 
+@keyframes line_1 {
+    0% {
+        bottom: 450px;
+    }
+    50% {
+        bottom: -25px;
+    }
+    100% {
+        display: none;
+    }
+}
+
+.line_bg {
+    position: absolute;
+    left: 10px;
+    bottom: 450px;
+    border-radius: 40%;
+    animation: line_1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 150%;
+    transition: all ease .4s;
+    /* box-shadow: 0px 0px 10px #fff; */
+}
+
+.konservantlar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.konservantlar h1 {
+    font-size: 72px;
+    margin-right: 15px;
+    z-index: 100000;
+    padding: 0;
+    margin: 0;
+}
+
+.konservantlar svg {
+    margin-left: 5px;
+}
+
+.tebigy_duzumler {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 800px;
+    margin-top: 20px;
+}
+
+.tebigy_duzumler h1 {
+    font-size: 72px;
+    margin-right: 15px;
+    z-index: 100000;
+    padding: 0;
+    margin: 0;
+}
+
+.zyyanly_gosundylar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* width: 900px; */
+    margin-top: 20px;
+    padding-right: 100px;
+}
+
+.zyyanly_gosundylar h1 {
+    font-size: 72px;
+    margin-right: 15px;
+    z-index: 100000;
+    padding: 0;
+    margin: 0;
+}
+
+.zyyanly_gosundylar svg {
+    margin-right: 5px;
+}
+
+.gowy_tagam {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.gowy_tagam h1 {
+    font-size: 72px;
+    z-index: 100000;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes face_svg {
+    0% {
+        transform: rotate(0grad);
+    }
+    100% {
+        transform: rotate(390grad);
+    }
+}
+
+.face_svg {
+    position: absolute;
+    bottom: 100px;
+    transform: rotate(0grad);
+    animation: face_svg linear infinite 1.5s;
+}
+
 
 /*  section 2 syste end  */
 
+
+/*  section 3 syste start  */
+
 #section3 {
-    height: 100vh;
-    background-color: aquamarine;
+    /* height: 50vh; */
+    /* background-color: aqua; */
+    position: relative;
+    z-index: 100000;
 }
+
+#section3 img {
+    width: 483px;
+    height: 569;
+}
+
+.gornus_text_div {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 300px;
+    z-index: 100000;
+}
+
+.chipsiler {
+    font-size: 48px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.tagamlary {
+    color: #FF7D2F;
+    font-size: 92px;
+    padding: 0;
+    margin: 0;
+}
+
+.ajayyp_3 {
+    font-size: 16px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.blue_packet {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* background-color: #FF7D2F; */
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.blue_packet img {
+    margin: auto;
+}
+
+.red_packet {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background: rgb(62, 88, 139);
+    background: linear-gradient(270deg, rgba(62, 88, 139, 1) 8%, rgba(50, 67, 101, 1) 31%, rgba(41, 41, 45, 1) 100%);
+    border-top: #fff solid 1px;
+    z-index: 1;
+}
+
+.red_packet img {
+    margin: auto;
+}
+
+.curtain_div {
+    background: rgb(62, 88, 139);
+    background: linear-gradient(270deg, rgba(62, 88, 139, 1) 8%, rgba(50, 67, 101, 1) 31%, rgba(41, 41, 45, 1) 100%);
+    height: 100vh;
+    width: 100%;
+    border-bottom: #fff solid 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+
+/*  section 3 syste end  */
+
+
+/*  section 4 syste begin  */
+
+.text_div {
+    background: rgb(62, 88, 139);
+    background: linear-gradient(270deg, rgba(62, 88, 139, 1) 8%, rgba(50, 67, 101, 1) 31%, rgba(41, 41, 45, 1) 100%);
+    height: 100vh;
+    position: relative;
+}
+
+.text_div div {
+    position: absolute;
+    top: 40%;
+    right: 400px;
+}
+
+.text_div div p {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.text_div div p span {
+    margin-right: 10px;
+}
+
+
+/*  section 4 syste end  */
+
+
+/*  section 5 syste begin  */
+
+.tagam_1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagam_1 img {
+    width: 500px;
+}
+
+
+/*  section 5 syste end  */

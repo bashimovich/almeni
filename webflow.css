@@ -2876,7 +2876,7 @@ blockquote {
     top: 0%;
     bottom: auto;
     left: auto;
-    right: 2%;
+    right: 0;
 }
 
 .text-span-4 {
@@ -3102,8 +3102,8 @@ blockquote {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 235px;
+    padding-right: 235px;
     display: flex;
     position: absolute;
     top: 0%;
@@ -3347,8 +3347,13 @@ blockquote {
     display: flex;
 }
 
-.header__navigation {
+.header__navigation.active {
     z-index: 44444;
+}
+
+.header__navigation {
+    z-index: -1;
+    transition: all ease .5s;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
@@ -4602,4 +4607,123 @@ a.w-webflow-badge {
 
 .contact_us h1 span {
     color: #FF7D2F;
+}
+
+.contact_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.contact_wrapper form {
+    width: 425px;
+    height: 600px;
+    gap: 63px;
+    opacity: 0px;
+}
+
+.contacts {
+    width: 997px;
+    height: 600px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.input_container {
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+
+.input_container label {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.input_container input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.input_container input::placeholder {
+    color: #949494;
+}
+
+.contacts {
+    display: flex;
+    justify-content: flex-end;
+    font-family: sans-serif;
+}
+
+.contact_container div {
+    margin-bottom: 40px;
+}
+
+.products_container {
+    display: none;
+}
+
+#chips.active_products {
+    transition: all ease .4s;
+    display: flex;
+}
+
+#hoz.active_products {
+    transition: all ease .4s;
+    display: flex;
+}
+
+#all.active_products {
+    transition: all ease .4s;
+    display: flex;
+}
+
+.active_filter {
+    border: none !important;
+    transition: all ease .4s;
+}
+
+.body {
+    position: relative;
+}
+
+.nav_con {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 10000;
+}
+
+.nav {
+    background: linear-gradient(270deg, #3E588B 8%, #324365 31.5%, #29292D 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50% 0% 50% 50%;
+    transition: all ease .5s;
+}
+
+.nav.active {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.nav-container {
+    width: 1440px !important;
+    margin: auto;
+    position: absolute;
+}
+
+.margin-top-150px {
+    margin-top: 150px;
 }
